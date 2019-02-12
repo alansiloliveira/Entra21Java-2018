@@ -1,0 +1,31 @@
+   public static void truncate() {
+        conectar();
+        if (conexao != null) {
+            try {
+                Statement st = conexao.createStatement();
+                st.addBatch("SET FOREIGN_KEY_CHECKS = 0;");
+                st.addBatch("TRUNCATE TABLE alunos;");
+                st.addBatch("TRUNCATE TABLE atividades;");
+                st.addBatch("TRUNCATE TABLE chamadas;");
+                st.addBatch("TRUNCATE TABLE coordenadores;");
+                st.addBatch("TRUNCATE TABLE disciplinas;");
+                st.addBatch("TRUNCATE TABLE escolas;");
+                st.addBatch("TRUNCATE TABLE frequencias;");
+                st.addBatch("TRUNCATE TABLE grade_horarios;");
+                st.addBatch("TRUNCATE TABLE hora_aula;");
+                st.addBatch("TRUNCATE TABLE niveis;");
+                st.addBatch("TRUNCATE TABLE notas;");
+                st.addBatch("TRUNCATE TABLE professores;");
+                st.addBatch("TRUNCATE TABLE salas;");
+                st.addBatch("TRUNCATE TABLE turmas;");
+                st.addBatch("TRUNCATE TABLE turmas_disciplinas;");
+                st.addBatch("TRUNCATE TABLE alunos_turmas_disciplinas;");
+                st.addBatch("SET FOREIGN_KEY_CHECKS = 1;");
+                st.executeBatch();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            } finally {
+                desconectar();
+            }
+        }
+    }

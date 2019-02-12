@@ -1,0 +1,64 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 13/08/2018, 07:56:40
+    Author     : Alunos
+*/
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+table{
+    margin: 0 10px;
+    width: 100%;
+}
+
+table thead tr, table tfoot tr{
+    background-color: #002752;
+    color: #000;
+    height: 35px;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+table tbody tr{
+    height: 35px;
+    color: #000000;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+table tbody tr:nth-child(even){background-color: #CCC};
+table tbody tr:nth-child(odd){background-color: #1e7e34};
+
+.botao-cadastro{
+    display: block;
+    text-decoration: none;
+    width: 100px;
+    background-color: #0099ff;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 25px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    float: right;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+h3{
+    text-align: center;
+    color: #3333ff;
+    font-size: 25px;
+    font-family: sans-serif;
+}
+
+
+
