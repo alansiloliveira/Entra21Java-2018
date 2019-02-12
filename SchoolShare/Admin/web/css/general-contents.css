@@ -1,0 +1,71 @@
+/* 
+    Created on : 24/09/2018, 19:07:47
+    Author     : Freakazed-PC
+*/
+
+.ink-header-top {
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid #ccc;
+    padding-top: 0;
+    padding-bottom: 12px;
+    background-color: #f2f2f2;
+    margin-top: 8px;
+}
+.ink-header-top h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 1%;
+    font-weight: bold;
+    font-family: Candara;
+}
+.col-default-guide-sh {
+    border: 1px solid #8b0000;
+    width: auto;
+}
+.content-folder-box {
+    border: none;
+    border-radius: 6px;
+    padding: 0 0 8px 0;
+    display: block;
+    margin: 0 auto;
+}
+
+.tabela-componentes-chamada label, 
+.tabela-componentes-chamada input,
+.tabela-componentes-chamada button {
+    display: block;
+}
+.campo-obrigatorio {
+    margin-left: 6px;
+    color: rgb(210, 70, 60);
+    font-weight: bold;
+}
+span.alerta-validacao {
+    border: none;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    color: rgb(210, 70, 60);
+    font-weight: bold;
+    margin-left: 0;
+    padding: 0;
+}
+/* rgb(210, 70, 60); */
+span.alerta-suporte-validacao {
+    display: inline-block;
+    width: 100%;
+    padding: 2px 4px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    color: #f2f2f2;
+    background-color: rgb(210, 70, 60);
+    font-weight: bold;
+}
+.box-folder-list {
+    border: 1px solid #000;
+    padding: 4px 4px 0 4px;
+    line-height: 20px;
+    text-decoration: none;
+}

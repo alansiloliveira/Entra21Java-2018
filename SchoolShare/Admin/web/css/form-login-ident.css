@@ -1,0 +1,332 @@
+/* 
+    Created on : 07/09/2018, 17:30:09
+    Author     : Marcio Augusto Schlosser
+*/
+
+html {
+    font-family: Calibri;
+    font-size: 14px;
+}
+body {
+    background-color: transparent;
+    background-size: cover;
+    background-image: url('/img/login-bg-4.jpg');
+    margin: 0 0 100px;
+    padding: 25px 0;
+    overflow:hidden;
+    font-size: 16px;
+}
+
+/*
+* Structure for classes
+*/
+
+.global-login-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+.login-status {
+    padding: 0;
+}
+.form-control-login {
+    width: 380px;
+    margin: 2% auto;
+    padding: 8px 14px;
+    background-color: transparent;
+    background-size: 100%;
+    background-position: center;
+}
+.form-control-support {
+    width: 380px;
+    margin: 0 auto;
+    padding: 6px 0;
+    background-color: transparent;
+    background-size: 100%;
+    background-position: center;
+}
+.wrapper-title-form {
+    border: none;
+    margin-bottom: 6px;
+    text-align: center;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+.nav-login-logo {
+    text-align: center;
+    font-size: 46px;
+    color: #88ff4d;
+}
+.nav-login-logo > b {
+    color: rgb(210, 70, 60);
+}
+.wrapper-login-top {
+    margin-left: 10%;
+    padding-bottom: 2px;
+    text-align: center;
+    width: 300px;
+}
+.wrapper-login-top > b {
+    font-size: 26px;
+    color: #fff;
+}
+.nav-login-logo > label {
+    font-size: 22px;
+    color: #f5f5f5;
+    display: block;
+}
+.wrapper-login-center {
+    margin-bottom: 12px;
+    padding: 10px 6px 0 6px;
+    background-color: transparent;
+}
+.wrapper-login-center h4 {
+    color: #f2f2f2;
+    text-align: left;
+}
+.wrapper-login-center h3 {
+    color: #f2f2f2;
+    text-align: center;
+}
+.wrapper-login-center h2 {
+    color: #fff;
+    text-align: center;
+    background-color: #ff6666;
+}
+.center-components, .wrapper-login-footer {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 4px 8px;
+    overflow: hidden;
+}
+.center-components button {
+    float: left;
+    overflow: hidden;
+}
+.center-components > label {
+    color: #f2f2f2;
+}
+.center-components a {
+    color: #88ff4d;
+}
+.center-components label, .center-components input {
+    display: inline-block;
+}
+.form-checkbox-control {
+    border: none;
+    margin-top: 6px;
+    position: relative;
+}
+.form-checkbox-control label {
+    text-indent: -10px;
+    display: block;
+    padding-left: 10px;
+    vertical-align: middle;
+    color: #f2f2f2;
+}
+.form-checkbox-control a {
+    float: right;
+}
+.form-control {
+    color: #666;
+    border-radius: 3px;
+    line-height: 1.5px;
+    padding: 4px 6px;
+    border: 1px solid #ccc;
+    height: 34px;
+    width: 100%;
+    display: inline-block;
+    font-size: 14px;
+    box-sizing: border-box;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.login-footer {
+    text-align: center;
+    padding: 12px 0 6px 0;
+    margin-top: 18px;
+    border-top: 2px solid #f2f2f2;
+    color: #f2f2f2;
+}
+.login-footer > strong > a {
+    color: #88ff4d;
+}
+.wrapper-login-footer {
+    margin-top: 35px;
+    border-top: 2px solid #ccc;
+    background-color: transparent;
+    color: #f2f2f2;
+    position: absolute;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    padding: 0 0 20% 0;
+}
+.wrapper-login-footer > strong {
+    color: #f2f2f2;
+}
+.wrapper-login-footer > strong > a {
+    color: #88ff4d;
+}
+.wrapper-suporte-footer {
+    margin-top: 0;
+    border-top: 2px solid #ccc;
+    background-color: transparent;
+    color: #f2f2f2;
+    position: absolute;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    padding: 0 0 20% 0;
+}
+.wrapper-suporte-footer > strong {
+    color: #f2f2f2;
+}
+.wrapper-suporte-footer > strong > a {
+    color: #88ff4d;
+}
+.wrapper-version {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: #f2f2f2;
+}
+.wrapper-version > b {
+    color: #f2f2f2;
+}
+
+/*
+* Components style
+*/
+
+label {
+    font-weight: bold;
+}
+button {
+    background-color: rgb(210, 70, 60);
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    color: #f2f2f2;
+    border: 1px solid  rgb(53, 103, 153);
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+a {
+    color: #f2f2f2;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.msg-span {
+    float: left;
+    box-sizing: border-box;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid #ff3333;
+    width: 100%;
+    padding: 4px 0;
+    overflow: hidden;
+    color: #f2f2f2;
+    line-height: 22px;
+    margin-bottom: 8px;
+    text-align: center;
+    background-color: #ff6666;
+}
+
+/* Popup for description Login */
+
+.box {
+    width: 40%;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.2);
+    padding: 35px;
+    border: 2px solid #fff;
+    border-radius: 20px/50px;
+    background-clip: padding-box;
+    text-align: center;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+.popup {
+    margin: 90px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+    border: 2px solid rgb(53, 103, 153);
+}
+.popup h2 {
+    margin-top: 0;
+    color: rgb(210, 70, 60);
+    font-family: Tahoma, Arial, sans-serif;
+}
+.popup b {
+    color: #000;
+}
+.popup .close {
+    position: absolute;
+    top: 2px;
+    right: 15px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+.popup .close:hover {
+    color: rgb(210, 70, 60);
+}
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+    color: #333;
+    border-top: 1px solid #666;
+    padding: 8px 0;
+}
+.content-info label {
+    text-decoration: none;
+    color: rgb(210, 70, 60);
+    display: block;
+    margin: 4px 0;
+    overflow: hidden;
+}
+.content-info {
+    text-align: left;
+    width: 100%;
+}
+.popup .content > .content-info {
+    border-bottom: 1px solid #666;
+    margin-top: 15px;
+    padding-bottom: 8px;
+}
+@media screen and (max-width: 700px){
+    .box{
+        width: 70%;
+    }
+    .popup{
+        width: 70%;
+    }
+}

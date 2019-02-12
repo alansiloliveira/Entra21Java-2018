@@ -1,0 +1,11 @@
+.red {
+  color: #FF3030;
+  border-width: medium;
+  border-style: solid;
+}
+
+.green {
+  color: #32CD32;
+  border-width: medium;
+  border-style: solid;
+}

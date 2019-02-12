@@ -1,0 +1,41 @@
+/* 
+    Created on : 11/09/2018, 15:18:47
+    Author     : Marcio Augusto Schlosser
+*/
+
+.scroll-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #ccc;
+}
+
+.scroll-table tbody,
+.scroll-table thead {
+    display: block;
+}
+
+.scroll-table > thead tr th { 
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.scroll-table > tbody {
+    height: 182px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.scroll-table tbody {
+    border-top: 1px solid #ccc;
+}
+
+.scroll-table tbody td, thead th {
+    width: 20%;
+    border-right: 1px solid #ccc;
+}
+
+.scroll-table tbody td:last-child, .scroll-table thead th:last-child {
+    border-right: none;
+}
